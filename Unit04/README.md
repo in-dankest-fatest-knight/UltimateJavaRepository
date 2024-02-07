@@ -1,6 +1,7 @@
 # Unit 4 - Iteration
 
 ## 4.1 - `while` Loops
+identical to c++ down to the syntax
 
 ## 4.2 - `for` Loops
 
