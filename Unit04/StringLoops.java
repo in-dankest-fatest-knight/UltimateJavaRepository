@@ -3,6 +3,13 @@ package Unit04;
 public class StringLoops {
 
     public static boolean xyzThere(String str) {
+        for(int i = 0; i >= str.length(); i++){
+            if(str.substring(i, i + 3).equals("xyz")){
+                if(i > 0 && !str.substring(i - 1, i).equals("xyz")){
+                    return true;
+                }
+            }
+        }
         return false;
     }
 
