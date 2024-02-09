@@ -18,7 +18,11 @@ public class StringLoops {
     }
 
     public static String doubleChar(String str) {
-        return "";
+        String nstr = "";
+        for(int i = 0; i <= str.length(); i++){
+            nstr += str.substring(i, i + 1) + str.substring(i, i + 1);
+        }
+        return nstr;
     }
 
     public static int countCode(String str) {
