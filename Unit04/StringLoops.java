@@ -14,7 +14,29 @@ public class StringLoops {
     }
 
     public static String zipZap(String str) {
-        return "";
+        String result = "";
+
+        for (int i = 0; i <= str.length() - 3; i++) {
+            // if I find zip, zap, zsp, etc
+            if (str.substring(i, i + 1).equals("z") &&
+                    str.substring(i + 2, i + 3).equals("p")) {
+                result += "zp";
+                i += 2;
+            } else {
+                result += str.substring(i, i + 1);
+            }
+        }
+
+        if (str.length() < 3) {
+            result += str;
+        } else if (str.substring(str.length() - 3, str.length() - 2).equals("z") &&
+                str.substring(str.length() - 1).equals("p")) {
+            // do nothing
+        } else {
+            result += str.substring(str.length() - 2);
+        }
+
+        return result;
     }
 
     public static String doubleChar(String str) {
