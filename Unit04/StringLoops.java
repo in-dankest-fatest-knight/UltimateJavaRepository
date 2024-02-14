@@ -221,26 +221,99 @@ public class StringLoops {
             }
             else{
                 for(int i = 0; i <= str.length(); i++){
-                    
+                    nstr += "+";
                 }
             }
         }
-        return "";
+        else{
+            for(int i = 0; i < str.length(); i++){
+                if(str.length() - i >= word.length()){
+                    if(str.substring(i, i + word.length()).equals(word)){
+                        nstr += word;
+                        i += word.length() - 1;
+                    }
+                    else{
+                        nstr += "+";
+                    }
+                }
+                else{
+                    if(str.substring(str.length() - i).equals(word)){
+                        nstr += word;
+                    }
+                    else{
+                        for(int c = 0; c < word.length() - 1; c++){
+                            nstr += "+";
+                        }
+                    }
+                    break;
+                }
+            }
+        }
+        
+        return nstr;
     }
 
     public static boolean catDog(String str) {
+        int catcount = 0;
+        int dogcount = 0;
+        for(int i = 0; i <= str.length() - 3; i++){
+            if(str.substring(i, i + 3).equals("cat")){
+                catcount++;
+            }
+            else if(str.substring(i, i + 3).equals("dog")){
+                dogcount++;
+            }
+        }
+        if(catcount == dogcount){
+            return true;
+        }
+        else{
         return false;
+        }
     }
 
     public static String mixString(String a, String b) {
-        return "";
+        String nstr = "";
+        boolean order = true;
+        if(a.length() >= b.length()){
+            order = true;
+        }
+        else{
+            order = false;
+        }
+
+        if(order){
+            for(int i = 0; i <= a.length() - 1; i++){
+                nstr += a.substring(i, i + 1);
+
+                if(i < b.length()){
+                    nstr += b.substring(i, i + 1);
+                }
+            }
+        }
+        else{
+            for(int i = 0; i <= b.length() - 1; i++){
+                if(i < a.length()){
+                    nstr += a.substring(i, i + 1);
+                }
+
+                nstr += b.substring(i, i + 1);
+            }
+        }
+        return nstr;
     }
 
     public static String repeatSeparator(String word, String sep, int count) {
-        return "";
+        String nstr = "";
+        for(int i = 0; i < count; i++){
+            nstr += word;
+            if(i != count - 1){
+                nstr += sep;
+            }
+        }
+        return nstr;
     }
 
     public static void main(String[] args) {
-        System.out.println(starOut("ab*cd"));
     }
 }
