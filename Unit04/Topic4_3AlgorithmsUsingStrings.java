@@ -2,7 +2,9 @@ package Unit04;
 
 public class Topic4_3AlgorithmsUsingStrings {
     public static void main(String[] args) {
-
+        String str = "hello";
+        str += 1;
+        System.out.println(str);
     }
 }
 
