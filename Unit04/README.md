@@ -13,3 +13,4 @@ strings
 useful
 
 ## 4.5 - Informal Code Analysis
+looking at code to check functionality

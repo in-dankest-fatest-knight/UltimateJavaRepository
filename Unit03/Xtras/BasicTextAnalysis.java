@@ -1,8 +1,22 @@
 package Unit03.Xtras;
 
+import java.util.Scanner;
+
 public class BasicTextAnalysis {
     public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
 
+        String word1 = "";
+        String sen1 = "";
+        int chars = 0;
+        s.useDelimiter("\\Z");
+
+        boolean active = true;
+        String chunk = s.next();
+        System.out.println("you typed in " + chunk);
+        // while(active){
+
+        // }
     }
 }
 
