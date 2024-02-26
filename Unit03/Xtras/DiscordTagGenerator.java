@@ -10,7 +10,7 @@ public class DiscordTagGenerator {
         name += "#";
         name += (int)(Math.random() * 10000);
         System.out.println(name);
-
+        s.close();
     }
 }
 // javac Unit03\Xtras\DiscordTagGenerator.java

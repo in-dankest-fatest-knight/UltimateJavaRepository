@@ -31,6 +31,7 @@ public class QuadraticSolver {
         else{
             System.out.println("no real solutions");
         }
+    s.close();
     }
 }
 // javac Unit03\Xtras\QuadraticSolver.java
