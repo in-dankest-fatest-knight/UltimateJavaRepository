@@ -1,6 +1,8 @@
 # Unit 05 - Writing Classes
+different notation from c, same idea
 
 ## 5.1 - Anatomy of a Class
+contructors and keeping variables private
 
 ## 5.2 - Constructors
 
