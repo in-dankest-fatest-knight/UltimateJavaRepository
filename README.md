@@ -92,6 +92,11 @@
 - [7.6 - Sorting](Unit07/Topic7_6Sorting.java)
 - [7.7 - Ethical Issues Around Data Collection](Unit07/Topic7_7EthicalIssuesAroundDataCollection.java)
 
+### [Unit 8 - 2D Array](Unit08/README.md)
+
+- [8.1 - 2D Arrays](Unit08/Topic8_1_2DArrays.java)
+- [8.2 - Traversing 2D Arrays](Unit08/Topic8_2Traversing2DArrays.java)
+
 ## Course Calendar
 
 | Mon                                                                                                                         | Tue                                                                                 | Wed                                                          | Thu                                                                                                                                                                  | Fri                                                                   |
