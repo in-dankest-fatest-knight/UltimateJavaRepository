@@ -1,7 +1,7 @@
 # Unit 9 - Inheritance
 
 ## 9.1 - Creating Superclasses and Subclasses
-
+subclass written as "public class Subclass extends Superclass
 ## 9.2 - Writing Constructors for Subclasses
 
 ## 9.3 - Overriding Methods
